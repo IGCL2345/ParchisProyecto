@@ -2,6 +2,7 @@ com\mycompany\parchisc4g550\vista\GUIJuego.class
 com\mycompany\parchisc4g550\vista\GUIHistoria.class
 com\mycompany\parchisc4g550\controlador\ControladorPrincipal.class
 com\mycompany\parchisc4g550\modelo\Tablero.class
+com\mycompany\parchisc4g550\modelo\AreaJuego.class
 com\mycompany\parchisc4g550\modelo\Ficha.class
 com\mycompany\parchisc4g550\vista\GUIPrincipal.class
 com\mycompany\parchisc4g550\vista\PanelControl.class
@@ -11,6 +12,7 @@ com\mycompany\parchisc4g550\ParchisC4G550.class
 com\mycompany\parchisc4g550\vista\GUIInstrucciones.class
 com\mycompany\parchisc4g550\modelo\Posicion.class
 com\mycompany\parchisc4g550\modelo\Casa.class
+com\mycompany\parchisc4g550\modelo\Jugador.class
 com\mycompany\parchisc4g550\modelo\Celda.class
 com\mycompany\parchisc4g550\modelo\CeldaEspecialColor.class
 com\mycompany\parchisc4g550\vista\PanelJuego.class

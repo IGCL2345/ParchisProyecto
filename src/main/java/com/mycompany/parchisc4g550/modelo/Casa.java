@@ -4,6 +4,9 @@
  */
 package com.mycompany.parchisc4g550.modelo;
 
+import java.awt.Component;
+import java.awt.Graphics;
+
 /**
  *
  * @author user
@@ -31,5 +34,14 @@ public class Casa {
     
     public Ficha getFicha(int posicion){
         return fichas[posicion];
+    }
+    public void dibujar(Component componente, Graphics g){
+        if(fichas!=null){
+            for(int indice=0;indice<fichas.length;indice++){
+                if(fichas[indice]!=null){
+                    fichas[indice].dibujar(componente, g);
+                }
+            }
+        }
     }
 }
