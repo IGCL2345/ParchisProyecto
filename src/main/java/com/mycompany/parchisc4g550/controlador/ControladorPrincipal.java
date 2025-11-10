@@ -7,6 +7,7 @@ package com.mycompany.parchisc4g550.controlador;
 import com.mycompany.parchisc4g550.vista.GUICreditos;
 import com.mycompany.parchisc4g550.vista.GUIHistoria;
 import com.mycompany.parchisc4g550.vista.GUIInstrucciones;
+import com.mycompany.parchisc4g550.vista.GUIJugador;
 import com.mycompany.parchisc4g550.vista.GUIPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,6 +22,7 @@ public class ControladorPrincipal implements ActionListener  {
     private GUIInstrucciones guiInstrucciones;
     private GUIHistoria guiHistoria;
     private ControladorJuego controladorJuego;
+    private GUIJugador guiJugador;
     
     public ControladorPrincipal(){
         guiPrincipal= new GUIPrincipal(this);
@@ -28,6 +30,7 @@ public class ControladorPrincipal implements ActionListener  {
         guiCreditos = new GUICreditos(this);
         guiInstrucciones= new GUIInstrucciones(this);
         guiHistoria= new GUIHistoria(this);
+        guiJugador=new GUIJugador(this);
     }
 
     @Override
@@ -35,7 +38,13 @@ public class ControladorPrincipal implements ActionListener  {
          switch (e.getActionCommand()){
              case "Jugar":
                  guiPrincipal.setVisible(false);
-                 controladorJuego=new ControladorJuego(guiPrincipal);
+                 guiJugador.setVisible(true);
+             break;
+             case "Continuar":
+                 System.out.println(guiJugador.getCbColor());
+                 System.out.println(guiJugador.getTxtJugador1());
+                 System.out.println(guiJugador.getTxtJugador2());
+                 controladorJuego=new ControladorJuego(guiPrincipal,guiJugador.getCbColor(),guiJugador.getTxtJugador1(),guiJugador.getTxtJugador2());
              break;
              case "Instrucciones":
                  guiInstrucciones.setVisible(true);

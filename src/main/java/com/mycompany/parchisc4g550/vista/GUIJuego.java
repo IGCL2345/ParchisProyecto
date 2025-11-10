@@ -5,6 +5,7 @@
 package com.mycompany.parchisc4g550.vista;
 
 import com.mycompany.parchisc4g550.controlador.ControladorJuego;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -31,6 +32,13 @@ public class GUIJuego extends javax.swing.JFrame {
         return panelJuego;
     }
     
+    public void showMessage(String mensaje){
+      JOptionPane.showMessageDialog(null, mensaje);
+    }
+    
+    public int inputRespuesta(String mensaje){
+      return JOptionPane.showConfirmDialog(null, mensaje);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.

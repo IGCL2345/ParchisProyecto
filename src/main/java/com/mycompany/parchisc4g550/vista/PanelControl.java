@@ -5,6 +5,7 @@
 package com.mycompany.parchisc4g550.vista;
 
 import com.mycompany.parchisc4g550.controlador.ControladorJuego;
+import javax.swing.JLabel;
 
 /**
  *
@@ -23,6 +24,16 @@ public class PanelControl extends javax.swing.JPanel {
         btnDado.addActionListener(controlador);
     }
 
+    public void setJlNombreJugador1(String jlNombreJugador1) {
+        this.jlNombreJugador1.setText(jlNombreJugador1);
+    }
+
+    public void setJlNombreJugador2(String jlNombreJugador2) {
+        this.jlNombreJugador2.setText(jlNombreJugador2);
+    }
+    
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -34,6 +45,8 @@ public class PanelControl extends javax.swing.JPanel {
 
         btnDado = new javax.swing.JButton();
         btnAtras = new javax.swing.JButton();
+        jlNombreJugador1 = new javax.swing.JLabel();
+        jlNombreJugador2 = new javax.swing.JLabel();
         jlFondo = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -47,8 +60,16 @@ public class PanelControl extends javax.swing.JPanel {
         btnAtras.setContentAreaFilled(false);
         add(btnAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 630, -1, -1));
 
+        jlNombreJugador1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jlNombreJugador1.setText("Jugador 1");
+        add(jlNombreJugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 220, -1, -1));
+
+        jlNombreJugador2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jlNombreJugador2.setText("Jugador 2");
+        add(jlNombreJugador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 300, -1, -1));
+
         jlFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/TableroFondo.png"))); // NOI18N
-        add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -56,5 +77,7 @@ public class PanelControl extends javax.swing.JPanel {
     private javax.swing.JButton btnAtras;
     private javax.swing.JButton btnDado;
     private javax.swing.JLabel jlFondo;
+    private javax.swing.JLabel jlNombreJugador1;
+    private javax.swing.JLabel jlNombreJugador2;
     // End of variables declaration//GEN-END:variables
 }
