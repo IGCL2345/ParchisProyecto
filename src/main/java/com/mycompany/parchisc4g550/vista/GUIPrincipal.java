@@ -27,6 +27,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
         btnHistoria.addActionListener(controlador);
         btnCreditos.addActionListener(controlador);
         btnSalir.addActionListener(controlador);
+        btnSonido.addActionListener(controlador);
         
     }
 

@@ -23,6 +23,7 @@ public class ControladorPrincipal implements ActionListener  {
     private GUIHistoria guiHistoria;
     private ControladorJuego controladorJuego;
     private GUIJugador guiJugador;
+    private AudioController audio;
     
     public ControladorPrincipal(){
         guiPrincipal= new GUIPrincipal(this);
@@ -31,6 +32,7 @@ public class ControladorPrincipal implements ActionListener  {
         guiInstrucciones= new GUIInstrucciones(this);
         guiHistoria= new GUIHistoria(this);
         guiJugador=new GUIJugador(this);
+        audio= new AudioController();
     }
 
     @Override
@@ -73,8 +75,17 @@ public class ControladorPrincipal implements ActionListener  {
              case "Salir":
                  System.exit(0);
              break;
+             case "Sonido":
+                 System.out.println("Esta escuchando");
+                 if(audio.estaReproduciendo()){
+                     audio.detener();
+                 
+                 }else{
+                     audio.iniciarMusica("/audios/audio1.wav");
+                 }
+             break;    
          }
-        
+                
     }
     
 }

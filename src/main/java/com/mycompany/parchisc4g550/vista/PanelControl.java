@@ -47,12 +47,17 @@ public class PanelControl extends javax.swing.JPanel {
         btnAtras = new javax.swing.JButton();
         jlNombreJugador1 = new javax.swing.JLabel();
         jlNombreJugador2 = new javax.swing.JLabel();
+        jlJugador1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jlFondo = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnDado.setText("Dado");
-        add(btnDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 120, -1, -1));
+        btnDado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/dado1.1.png"))); // NOI18N
+        btnDado.setActionCommand("Dado");
+        btnDado.setBorderPainted(false);
+        btnDado.setContentAreaFilled(false);
+        add(btnDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 70, -1, -1));
 
         btnAtras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/botonAtras.png"))); // NOI18N
         btnAtras.setActionCommand("Atras");
@@ -62,11 +67,17 @@ public class PanelControl extends javax.swing.JPanel {
 
         jlNombreJugador1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jlNombreJugador1.setText("Jugador 1");
-        add(jlNombreJugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 220, -1, -1));
+        add(jlNombreJugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 300, -1, -1));
 
         jlNombreJugador2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jlNombreJugador2.setText("Jugador 2");
-        add(jlNombreJugador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 300, -1, -1));
+        add(jlNombreJugador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 510, -1, -1));
+
+        jlJugador1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/jugador1.png"))); // NOI18N
+        add(jlJugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 150, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/jugador2.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 350, -1, -1));
 
         jlFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/TableroFondo.png"))); // NOI18N
         add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
@@ -76,7 +87,9 @@ public class PanelControl extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
     private javax.swing.JButton btnDado;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jlFondo;
+    private javax.swing.JLabel jlJugador1;
     private javax.swing.JLabel jlNombreJugador1;
     private javax.swing.JLabel jlNombreJugador2;
     // End of variables declaration//GEN-END:variables
