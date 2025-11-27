@@ -19,9 +19,9 @@ public class BancoPregunta {
     
     public void crearPreguntas(){
        agregar(new Pregunta("Bruselas es la capital de Belgica?",0));
-       agregar(new Pregunta("¿Carlos se va a quedar en ITM?",0));
+       agregar(new Pregunta("Santa Cruz esta en Guanacaste?",0));
        agregar(new Pregunta("¿El tomate es una fruta?",0));
-       agregar(new Pregunta("¿María siempre llega temprano?",1));
+       agregar(new Pregunta("Jicaral es parte de Guanacaste?",1));
         
     }
     

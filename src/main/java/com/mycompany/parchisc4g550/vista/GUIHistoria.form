@@ -49,6 +49,27 @@
         </Constraint>
       </Constraints>
     </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="140" y="300" width="620" height="150"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="El juego Parch&#xed;s tiene su origen en la India, proveniente de un juego antiguo llamado Pachisi, &#xa;que data del siglo XVI y fue creado durante el reinado del emperador Akbar el Grande. &#xa;Este juego original estaba inspirado en carreras de caballos y utilizaba fichas con diferentes formas.&#xa;El Parch&#xed;s lleg&#xf3; a Europa en el siglo XVIII gracias a los ingleses durante su ocupaci&#xf3;n de la India, &#xa;quienes lo adaptaron y crearon versiones occidentales, haciendo popular el juego en distintas sociedades, &#xa;incluso entre la aristocracia y la Reina Victoria. Con el tiempo, surgieron variantes simplificadas como el Ludo, &#xa;que todav&#xed;a se juega hoy en d&#xed;a. El Parch&#xed;s se volvi&#xf3; un juego muy popular y tradicional transmitido de generaci&#xf3;n&#xa;en generaci&#xf3;n principalmente en Espa&#xf1;a y otros pa&#xed;ses de habla hispana."/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
     <Component class="javax.swing.JLabel" name="jlFondo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">

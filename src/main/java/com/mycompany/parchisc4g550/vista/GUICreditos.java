@@ -37,6 +37,9 @@ public class GUICreditos extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         btnAtras = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jlFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,6 +52,18 @@ public class GUICreditos extends javax.swing.JFrame {
         btnAtras.setText("Atras");
         btnAtras.setActionCommand("AtrasCreditos");
         getContentPane().add(btnAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 620, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setText("Ignacio Jose Lopez Alvarado");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
+        jLabel3.setText("Parte Visual:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setText("Yuliana Masis");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, -1, -1));
 
         jlFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/tableroCreditos_1.png"))); // NOI18N
         getContentPane().add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
@@ -63,6 +78,9 @@ public class GUICreditos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jlFondo;
     // End of variables declaration//GEN-END:variables
 }

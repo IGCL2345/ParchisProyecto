@@ -40,6 +40,27 @@
         </Constraint>
       </Constraints>
     </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="160" y="190" width="590" height="410"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Dos jugadores alternan turnos en el mismo ordenador.&#xa;&#xa;Cuatro colores de fichas; el elige un color y el rival recibe el color opuesto: Rojo &#x2194; Amarillo, Azul &#x2194; Verde.&#xa;&#xa;Solo se usan esos dos colores, los otros dos quedan bloqueados.&#xa;&#xa;El juego incluye sonido de fondo y efectos para acciones (responder, ganar, perder).&#xa;&#xa;Tablero con 68 casillas numeradas (circuito completo).&#xa;&#xa;Casillas normales: al caer aparece pregunta de verdadero/falso f&#xe1;cil; respuesta correcta suma 1 punto, incorrecta resto 1 punto.&#xa;&#xa;Casillas especiales (posiciones 68, 63, 51, 46, 34, 29, 17, 12): al caer, pregunta de verdadero/falso m&#xe1;s dif&#xed;cil; respuesta correcta da tiro extra, incorrecta pierde turno.&#xa;&#xa;Si un jugador alcanza a otro en la misma casilla se activa pregunta especial: correcto suma 2 puntos, incorrecto resta 3 puntos y ficha vuelve a casa.&#xa;&#xa;Puntaje inicial: 5 puntos; El juego termina si un jugador llega a 0 puntos.&#xa;&#xa;Gana el jugador que lleve una ficha a la meta con al menos 1 punto.&#xa;&#xa;Dado con valores 1 a 6; para salir de casa debe salir un 5.&#xa;&#xa;Posici&#xf3;n de fichas controladas por coordenadas (x,y) en la imagen del tablero."/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
     <Component class="javax.swing.JLabel" name="jlFondo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">

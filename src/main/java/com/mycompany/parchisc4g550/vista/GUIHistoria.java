@@ -37,6 +37,8 @@ public class GUIHistoria extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         btnAtras = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jlFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,6 +51,13 @@ public class GUIHistoria extends javax.swing.JFrame {
         btnAtras.setText("Atras");
         btnAtras.setActionCommand("AtrasHistoria");
         getContentPane().add(btnAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 630, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("El juego Parchís tiene su origen en la India, proveniente de un juego antiguo llamado Pachisi, \nque data del siglo XVI y fue creado durante el reinado del emperador Akbar el Grande. \nEste juego original estaba inspirado en carreras de caballos y utilizaba fichas con diferentes formas.\nEl Parchís llegó a Europa en el siglo XVIII gracias a los ingleses durante su ocupación de la India, \nquienes lo adaptaron y crearon versiones occidentales, haciendo popular el juego en distintas sociedades, \nincluso entre la aristocracia y la Reina Victoria. Con el tiempo, surgieron variantes simplificadas como el Ludo, \nque todavía se juega hoy en día. El Parchís se volvió un juego muy popular y tradicional transmitido de generación\nen generación principalmente en España y otros países de habla hispana.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, 620, 150));
 
         jlFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/tableroHistoria.png"))); // NOI18N
         getContentPane().add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
@@ -64,6 +73,8 @@ public class GUIHistoria extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel jlFondo;
     // End of variables declaration//GEN-END:variables
 }

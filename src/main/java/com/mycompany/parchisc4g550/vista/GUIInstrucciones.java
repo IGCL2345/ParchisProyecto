@@ -36,6 +36,8 @@ public class GUIInstrucciones extends javax.swing.JFrame {
     private void initComponents() {
 
         btnAtras = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jlFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -46,6 +48,13 @@ public class GUIInstrucciones extends javax.swing.JFrame {
         btnAtras.setBorderPainted(false);
         btnAtras.setContentAreaFilled(false);
         getContentPane().add(btnAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 620, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Dos jugadores alternan turnos en el mismo ordenador.\n\nCuatro colores de fichas; el elige un color y el rival recibe el color opuesto: Rojo ↔ Amarillo, Azul ↔ Verde.\n\nSolo se usan esos dos colores, los otros dos quedan bloqueados.\n\nEl juego incluye sonido de fondo y efectos para acciones (responder, ganar, perder).\n\nTablero con 68 casillas numeradas (circuito completo).\n\nCasillas normales: al caer aparece pregunta de verdadero/falso fácil; respuesta correcta suma 1 punto, incorrecta resto 1 punto.\n\nCasillas especiales (posiciones 68, 63, 51, 46, 34, 29, 17, 12): al caer, pregunta de verdadero/falso más difícil; respuesta correcta da tiro extra, incorrecta pierde turno.\n\nSi un jugador alcanza a otro en la misma casilla se activa pregunta especial: correcto suma 2 puntos, incorrecto resta 3 puntos y ficha vuelve a casa.\n\nPuntaje inicial: 5 puntos; El juego termina si un jugador llega a 0 puntos.\n\nGana el jugador que lleve una ficha a la meta con al menos 1 punto.\n\nDado con valores 1 a 6; para salir de casa debe salir un 5.\n\nPosición de fichas controladas por coordenadas (x,y) en la imagen del tablero.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 590, 410));
 
         jlFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/tableroInstrucciones.png"))); // NOI18N
         getContentPane().add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, -1));
@@ -60,6 +69,8 @@ public class GUIInstrucciones extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel jlFondo;
     // End of variables declaration//GEN-END:variables
 }

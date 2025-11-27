@@ -92,7 +92,8 @@ public class ControladorJuego implements ActionListener,MouseListener {
                     break;
 
         }
-     }
+}
+     
           if (timer.isRunning()) {
             update();
           
@@ -101,7 +102,8 @@ public class ControladorJuego implements ActionListener,MouseListener {
                         cronometro.stop();
                     }
      }
-  }
+    }
+  
     
     public void update() {
 
@@ -119,16 +121,21 @@ public class ControladorJuego implements ActionListener,MouseListener {
 //        System.out.println("x "+e.getX()+" Y "+e.getY());
 //        ficha.getPosicion().setX(e.getX());
 //        ficha.getPosicion().setY(e.getY());
+          
           if(casa.isContains(e.getX(), e.getY())){
              System.out.println("Si hay una ficha");
              System.out.println("Indice de la ficha  "+casa.getIndexFicha(e.getX(), e.getY()));
           } else{
                System.out.println("No hay una ficha");
+               
           }
+          
         posicion=new Posicion(e.getX(),e.getY());
         panelJuego.repaint();
-        
-    }
+        int numDado = 3; 
+               areaJuego.moverFicha(e.getX(),e.getY(), numDado);
+}
+    
 
     @Override
     public void mousePressed(MouseEvent e) {
@@ -144,8 +151,10 @@ public class ControladorJuego implements ActionListener,MouseListener {
 
     @Override
     public void mouseExited(MouseEvent e) {
-    }
+     }
     
+}  
     
-}
+
+
 
